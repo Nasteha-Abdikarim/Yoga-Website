@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- Humburger -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+
+        <!-- <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+        </div> -->
+
+        <!-- Desktop-menue -->
+        <nav class=" Container  desktop-menu">
+            <!-- Left side -->
+            <ul id="left-menu" class="menus-link">
+                <li><a href="#"> Our Philosophy</a></li>
+                <li><a href="#"> Houses </a></li>
+                <li><a href="#"> Map</a></li>
+            </ul>
+            <!-- Logo -->
+            <h1>RetreetM5</h1>
+            <!-- Right side -->
+            <ul id="Right-menu" class="menus-link">
+                <li><a href="#"> Leisure</a></li>
+                <li><a href="#"> How to get there</a></li>
+                <li><a href="#"> Contacts</a></li>
+            </ul>
+
+        </nav>
+
+         <!-- Mobile-menu -->
+         <nav class="mobile-menu" data-visible="true">
+            <div class="navigation">
+                <h1>RetreetMe5</h1>
+                <ul class="menus-link">
+                    <li><a href="#"> Our Philosophy</a></li>
+                    <li><a href="#"> Houses </a></li>
+                    <li><a href="#"> Map</a></li>
+                    <li><a href="#"> Leisure</a></li>
+                    <li><a href="#"> How to get there</a></li>
+                    <li><a href="#"> Contacts</a></li>
+                </ul>
+            
+                <div class="mobile-menu-action">
+                    <div class="btn-primery">Book a room</div>
+                    <div class="btn-secondary">Write to Us</div>
+                </div>
+    
+
+            </div>
+         </nav>
+
+
+
+    </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+
+    </script>
+    
+    <!-- Face of the page -->
+    <section class="hero">
+        <div class="container">
+            <h1>YOU CANNOT DO YOGA<BR> YOGA IS YOUR NATURAL STATE</h1>
+            <div class="btn">Learn More</div>
+        </div>
+    </section>
+
+    <!-- YOGA SECTION -->
+    
+<section>
+    <div class="container  yoga">
+        <div class="content">
+             <h2>YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h2>
+             <p>Donec enim diam vulputate ut. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc scelerisque.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- INFO SECTION -->
+<section>
+    <div class="container  info-box">
+        <div class="box">
+            <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="">
+            <h1>Why you should go to yoga</h1>
+            <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+            <div class="btn">View More</div>
+        </div>
+        <div class="box">
+            <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg" alt="">
+            <h1>Yoga is a way to freedom</h1>
+            <p>Odio facilisis mauris sit amet. At varius vel pharetra vel. Pellentesque pulvinar pellentesque habitant morbi.</p>
+            <div class="btn">View More</div>
+        </div>
+        <div class="box">
+            <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-thiago-2410573.jpg" alt="">
+            <h1>Yoga is possible for anybody who really...</h1>
+            <p>Odio facilisis mauris sit amet. At varius vel pharetra vel. Pellentesque pulvinar pellentesque habitant morbi..</p>
+            <div class="btn">View More</div>
+        </div>
+        <div class="box">
+            <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-oluremi-adebayo-2908176.jpg" alt="">
+            <h1>Yoga is the practice of quieting the mind</h1>
+            <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+            <div class="btn">View More</div>
+        </div>
+    </div>
+</section>
+  
+<!-- Perfect section -->
+<section class="Perfect-condition">
+    <div class="container">
+        <h2> Keep your body in perfect condition</h2>
+        <p>Dignissim diam quis enim lobortis scelerisque fermentum. Ipsum a arcu <br>
+            cursus vitae congue mauris rhoncus. Velit euismod in pellentesque massa<br>
+            placerat duis. Nulla malesuada pellentesque elit eget gravida. Enim sit amet<br>
+            venenatis urna. Venenatis a condimentum vitae sapien pellentesque<br>
+             habitant morbi tristique.</p>
+    </div>
+</section>
+
+<section class="yoga-classes">
+    <div class="container">
+        <h2>Choose your classes and start <br> your trainnig</h2>
+        <div class="btn">Write to us</div>
+       
+    </div>
+</section>
+
+
+<footer class="container">
+    <p> &copy; Copyright 2022 Mabirise - All rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
