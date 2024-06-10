@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dfdfd8;
+  font-family: "Anybody", sans-serif;
+}
+
+.Container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+img{
+    width: 100%;
+}
+
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.desktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+   
+}
+
+
+.menus-link {
+    display: flex;
+    gap: 20px;
+   
+}
+
+.menus-link  li {
+    list-style: none;
+}
+
+.menus-link  li a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.3rem;
+}
+
+.menus-link  li a:hover {
+    color:#5f6ad4;}
+
+
+.desktop-menu h1 {
+        font-weight: 700;
+        font-size: 1.5625rem;
+        color: black;
+        line-height: 1.5625;
+    }
+
+
+.hamburger{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-action{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 70%;
+}
+.btn-primery, .btn-secondary{
+ 
+    display: inline-block;
+    background-color: #5f6ad4;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+
+
+}
+
+.btn-secondary {
+    background-color: transparent;
+
+    border: solid 1px white;
+}
+
+.hero{
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(205, 201, 201, 0.247), rgba(0, 0, 0, 0.324)),
+    
+    url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg") bottom/cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+}
+.hero .container h1{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.hero .container .btn{
+    background-color: #5f6ad4;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2rem;
+    padding: 0.9375rem 3.75rem ;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out ;
+}
+.hero .container .btn:hover{
+    background-color: #fafaf6;
+    color: #2b2b2b;
+}
+
+.yoga{
+
+    height: 90vh;
+    background: linear-gradient(rgba(135, 135, 135, 0.3), rgba(131, 131, 131, 0.3)),
+    url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2121066.jpg") top/cover no-repeat;
+    width: 70vw;
+    margin-top: 4rem;
+    margin-inline: auto;
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: flex-end;
+    
+    
+}
+.yoga .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9rem;
+    max-width: 628px;
+    /* background-color: #5f6ad4; */
+    margin-inline: auto;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.yoga .content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.yoga .content p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container{
+    margin-inline:auto;
+}
+.info-box{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 3rem;
+    width: 70vw;
+    margin-top: 4rem;
+  
+
+}
+
+.info-box .box img{
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+
+.info-box .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+    /* margin: 0 1rem;
+    padding: 0 1rem; */
+}
+
+.info-box .box  h1{
+    font-size: 1.5rem;
+    color: #2b2b2a;
+}
+
+.info-box .box  p{
+    font-size: 1rem;
+    color: #646464;
+}
+
+.info-box .box  .btn{
+    width: 50%;
+    background-color: #5f6ad4;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2rem;
+    padding: 0.275rem 2rem ;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out ;
+}
+
+.Perfect-condition{
+    height: 438px;
+    background: linear-gradient(rgba(135, 135, 135, 0.3), rgba(131, 131, 131, 0.3)),
+    url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    margin: 4rem 0;
+    background-attachment: fixed;
+}
+
+
+.Perfect-condition .container{
+    width: 70vw;
+}
+
+.Perfect-condition .container h2{
+    color: #2a2a2a;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.Perfect-condition .container p{
+    color: #2b2b2b;
+    font-size: 1.25rem;
+    font-weight: 400;
+   
+}
+.yoga-classes{
+ 
+    height: 355.188px;
+    background: linear-gradient(rgba(135, 135, 135, 0.3), rgba(131, 131, 131, 0.3)),
+    url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    margin: 4rem 0;
+}
+.yoga-classes .container {
+    width: 50%;
+    border-radius: 10px;
+    border: solid 2px  #5f6ad4;
+    background-color: #fafaf6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40%;
+    align-items: center;
+    padding: 1rem;
+}
+.yoga-classes .container h2{
+    font-size: 1rem;
+
+}
+.yoga-classes .container .btn{
+    width: 30%;
+    background-color: #5f6ad4;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2rem;
+    padding: 0.275rem 2rem ;
+    border-radius: 0.625rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out ;
+}
+
+footer{
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tablet+ mobile phone */
+@media (max-width:768px){
+    .desktop-menu{
+        display: none;
+    }
+
+    header{
+        height: 0;
+    }
+
+    i{
+        z-index: 11111;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #5f6ad4;
+        color: white;
+        width: 80px;
+        height: 80px;
+        top: 7%;
+        right: 5%;
+        border-radius: 50%;
+        font-size: 2rem;
+
+    }
+
+    /* .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #5f6ad4;
+        color: white;
+    
+        width: 50px;
+        height: 50px;
+        top: 7%;
+        right: 5%;
+        border-radius: 50%;
+        font-size: 2rem;
+    } */
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+        
+    }
+    .hamburger i[data-visible="false"]{
+        display: none;
+        
+    }
+/* 
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    } */
+
+
+    .mobile-menu{
+       
+        display: flex;
+        position: fixed;
+        background-color: #2b2b2a;
+        justify-content: center;
+       color: white;
+        inset: 0 0 0 0;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in;
+    }
+
+    .mobile-menu[data-visible ="true"]{
+        transform: translate(100%);
+
+    }
+
+   
+
+
+
+    .navigation{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    .navigation h1 {
+        font-weight: 700;
+        font-size: 2.0625rem;
+        line-height: 2.0625rem;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+ 
+    .menus-link{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+       
+    }
+
+    .menus-link li  a {
+        color: white;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+
+    .hero .container h1 {
+        font-size: 3.0625rem;
+    }
+
+    
+.yoga{
+    height: 70vh;
+    width: 90vw;
+}
+
+.yoga .content{
+    margin-bottom: 2rem;
+}
+
+    .yoga .content h2{
+        font-size: 2rem;
+    }
+
+    .yoga .content p{
+        font-size: 1.25rem;
+    }
+
+    .info-box{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 4rem;
+      
+    
+    }
+    .info-box .box  .btn{
+        width: 70%;
+    }
+    
+    .Perfect-condition .container h2{
+ 
+        font-size: 2rem;
+     
+    }
+    .Perfect-condition .container p{
+     
+        font-size: 1rem;
+    
+    }
+
+    .yoga-classes .container{
+        flex-direction: row;
+        height: 80%;
+       
+    }
+
+    .yoga-classes .container .btn{
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+}
+
