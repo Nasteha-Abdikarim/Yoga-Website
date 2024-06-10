@@ -307,8 +307,8 @@ footer{
     color: white;
     padding: 20px;
     text-align: center;
-    position: sticky;
-    bottom: 0;
+    /* position: sticky; */
+    /* bottom: 0; */
     width: 100%;
 }
 
